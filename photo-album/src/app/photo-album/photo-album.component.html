@@ -1,0 +1,11 @@
+<p>
+  photo-album
+</p>
+<app-search-box  class="image-parent" (update)="term = $event"></app-search-box>
+
+<app-photo [photo]="photo" class="image-parent"
+          *ngFor='let photo of photosData
+                    | search: term
+                    | paginate: { itemsPerPage: 10, currentPage: p}'>
+</app-photo>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
