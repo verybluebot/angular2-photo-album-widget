@@ -19,7 +19,8 @@
 ### Usage for Photo-Album
 1. make sure you have `angular-cli` installed
 2. `cd` into `photo-album`
-3. run `ng serve`
+3. run `npm install`
+4. run `ng serve`
 
 NOTE: `photo-album` is using the go server (photo-album-server) by default so its best to
 run the server first before running `photo-album` to avoid 404 responses
